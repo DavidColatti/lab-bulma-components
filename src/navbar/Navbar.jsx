@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import 'bulma/css/bulma.css';
+import CoolButton from '../coolbutton/CoolButton';
+
 
 
 class Navbar extends Component {
@@ -52,15 +53,9 @@ class Navbar extends Component {
                         </div>
 
                         <div className="navbar-end">
-                            <div className="navbar-item">
-                                <div className="buttons">
-                                    <a className="button is-primary">
-                                        <strong>Sign up</strong>
-                                    </a>
-                                    <a className="button is-light">
-                                        Log in
-                                    </a>
-                                </div>
+                        <div className="navbar-item">
+                            <CoolButton text="Sign up" classProp="button is-rounded my-class is-danger is-small"/>
+                            <CoolButton text="Log in" classProp="button is-small is-success" />
                             </div>
                         </div>
                     </div>
